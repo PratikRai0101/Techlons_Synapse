@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+transformers
+scikit-learn
+biopython
+numpy
+sentencepiece
+protobuf
+einops
+huggingface_hub
