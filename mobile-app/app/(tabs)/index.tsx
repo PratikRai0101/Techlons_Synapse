@@ -1,4 +1,4 @@
-import { BellDot, FileText, Upload, User } from 'lucide-react-native';
+import { BellDot, FileText, Upload } from 'lucide-react-native';
 import { useState } from 'react';
 import { ScrollView, Text, TouchableOpacity, View } from 'react-native';
 
@@ -132,25 +132,6 @@ export default function Home() {
           </View>
         )}
       </ScrollView>
-      {/* Bottom Navigation */}
-      <View className="absolute bottom-0 left-0 right-0 bg-white border-t border-black flex-row justify-around items-center h-20">
-        <TouchableOpacity className="items-center justify-center flex-1">
-          <Upload size={28} color="#000" />
-          <Text className="text-xs font-bold mt-1">UPLOADS</Text>
-        </TouchableOpacity>
-        <TouchableOpacity className="items-center justify-center flex-1">
-          <FileText size={28} color="#000" />
-          <Text className="text-xs font-bold mt-1">ANALYSIS</Text>
-        </TouchableOpacity>
-        <TouchableOpacity className="items-center justify-center flex-1">
-          <BellDot size={28} color="#000" />
-          <Text className="text-xs font-bold mt-1">AUDIT</Text>
-        </TouchableOpacity>
-        <TouchableOpacity className="items-center justify-center flex-1">
-          <User size={28} color="#000" />
-          <Text className="text-xs font-bold mt-1">PROFILE</Text>
-        </TouchableOpacity>
-      </View>
     </View>
   );
 }

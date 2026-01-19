@@ -1,0 +1,10 @@
+import { Text, View } from 'react-native';
+
+export default function LabCasesScreen() {
+  return (
+    <View className="flex-1 bg-white">
+      <Text className="text-2xl font-bold p-4">Patient Case Files (Lab)</Text>
+      {/* Add the case cards UI here */}
+    </View>
+  );
+}
